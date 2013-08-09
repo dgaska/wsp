@@ -1,0 +1,68 @@
+body{
+	font: 100%/1.5 Tahoma, Geneva, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	box-shadow: 10px 10px 5px #6d6d6d;
+}
+
+.top{
+	text-align: center;
+	background: #99fbff;
+}
+
+h4{
+	padding: .5em;
+	text-decoration: underline;
+}
+
+h5{
+	padding: .5em;
+}
+
+a{
+	text-align: center;
+	padding: .5em;
+}
+
+#intent{
+	background: #eee;
+	border: 1px solid #000;
+	margin: .5em;
+}
+
+p{
+	padding: .5em;
+	text-indent: 2em;	
+}
+
+aside{
+	float: right;
+	padding: .5em;
+	margin: 1em;
+	background: #99fbff;
+	border: 1px solid #000;
+}
+#aside_head{
+	text-align: center;
+}
+#demo_head{
+	text-align: center;
+}
+
+#audience{
+	clear: both;
+}
+
+#competition{
+	border: 1px solid #000;
+	margin: .5em;
+	background: #eee;
+}
+
+#audience{
+	border: 1px solid #000;
+	background: #eee;
+	margin: .5em;
+}
