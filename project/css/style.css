@@ -9,17 +9,96 @@ Copyright 2013, Josh Cope
 nav li{
 	display: inline;
 }
+body{
+	background-image: -webkit-linear-gradient(#ffffff 0%, #337716 100%);
+}
+header{
+	background-color:  #2e568c;
+}
+.nav_li{
+	width: 20em;
+	font: 0.875em;
+	text-decoration: none;
+	background: #e1db92;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	padding: 1.11111111111%;}
+h1{
+	font:4.5em lucida calligraphy;
+	text-shadow: 30px 30px 10px #e1db92;
+	text-align: center;
+	margin-left: 4.5em;
+}
+h2{
+	font:4.5em lucida calligraphy;
+	text-shadow: 30px 30px 10px #e1db92;
+	text-align: center;
+	margin-left: 4.5em;
+}
+h3{
+	text-align: center;
+}
+.sub{
+	padding: .25em;
+	font: 3em kefa;
+	text-align: center;
+}
+footer{
+	border-top: 2px solid black;
+	margin-top: 20em;
+}
+#contact{
+	line-height: 3em;
+}
+a:visited{
+	color: gray;
+}
+a:hover{
+	color: #337716;
+}
+a:active{
+	color: #fc933d;
+}
 /* =============================================================================
    Page Styles
    ========================================================================== */
-
+aside{
+	background: #e1db92;
+	margin-top: 18em;
+	box-shadow: 5px 5px 15px 10px  #2e568c;
+}
+#table_head{
+	text-align: center;
+}
+tr{
+	text-align: center;
+}
+td{
+	text-align: left;
+	padding-left: 2em;
+}
+#hospital_photo{
+	display: block;
+	margin-left: 1em;
+}
+#laser{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+label{
+	
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {}
-
+h1{
+	ma
+}
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}
 
