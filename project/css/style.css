@@ -6,37 +6,142 @@ Copyright 2013, Josh Cope
 /* =============================================================================
    Site Styles
    ========================================================================== */
-nav li{
-	display: inline;
-}
 body{
-	background-image: -webkit-linear-gradient(#ffffff 0%, #337716 100%);
+	font: 100%/1.5 arial, Geneva, sans-serif;
+	max-width:1200px;
+	margin-left: 0 auto;	
+  /*  Chrome 1-9 and Safari 4-5.0  */
+	background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, #408000 ),
+        color-stop( 1.0, #d5d5d5 ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  	background-image: -webkit-linear-gradient(top,
+        #408000, 
+        #d5d5d5 );
+
+  /*  Firefox 3.6+  */
+  	background-image: -moz-linear-gradient(top,
+        #408000, 
+        #d5d5d5 );
+
+  /*  IE 10+  */
+  	background-image: -ms-linear-gradient(top,
+        #408000, 
+        #d5d5d5 );
+
+  /*  Opera 11.10+  */
+ 	background-image: -o-linear-gradient(top,
+        #408000, 
+        #d5d5d5 );
+
+  /*  W3C  */
+  	background-image: linear-gradient(top,
+        #408000, 
+        #d5d5d5 );
+
 }
 header{
 	background-color:  #2e568c;
+	height: 120px
 }
-.nav_li{
-	width: 20em;
-	font: 0.875em;
-	text-decoration: none;
-	background: #e1db92;
-	height: 20px;
-	line-height: 20px;
-	text-align: center;
-	padding: 1.11111111111%;}
+nav {
+    margin-bottom:16px;
+    background: #e1db92; 
+    background:linear-gradient(top,#e1db92 0%, #999 100%);  
+    background:-moz-linear-gradient(top,#e1db92 0%, #999 100%); 
+    background:-webkit-linear-gradient(top,#e1db92 0%,#999 100%);
+    background:-ms-linear-gradient(top,#e1db92 0%,#999 100%);
+ }
+nav:after {
+    content:'';
+    clear:both; 
+    display:block;
+ }
+nav ul {
+    position:relative;
+    float:right;
+    right:50%;
+    padding:0;
+    margin:0;
+    font-family:animace;
+    font-size:14px;
+    list-style: none;
+ }
+nav ul li {
+    position:relative;
+    float:left;
+    left:50%;
+    border-left:1px solid #555;
+ }
+nav ul li:last-of-type {
+    border-right:1px solid #555;
+ }
+nav ul ul {
+    display:none;
+    position:absolute;
+    right:auto;
+    left:-1px;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+    background: #e1db92;
+    white-space:nowrap;
+ }
+nav ul li:hover ul {
+    display:block;
+ }
+nav ul li:hover {
+    background:#333;
+    background:linear-gradient(top,#333 0%,#555 40%);
+    background:-moz-linear-gradient(top,#333 0%,#555 40%);
+    background:-webkit-linear-gradient(top,#333 0%,#555 40%);
+    background:-ms-linear-gradient(top,#333 0%,#555 40%);
+ }
+nav ul li:hover a {
+    color:#fff;
+ }	
+nav ul a {
+    display:block;
+    padding:15px 30px;
+    color:#333;
+    text-decoration: none;
+ }
+nav ul li ul li {
+    left:0;
+    float:none;
+    border-bottom:1px solid #bbb;
+ }
+nav ul ul li a {
+    padding:10px 20px;
+    color: #555;
+}	
+nav ul ul li a:hover {
+    background:#333;
+ }
+/* Begin descendants of nav */
+#logo {
+    /* Spans 5 columns. */
+    float:left;
+    width:493px;
+    margin-right:12px;
+}
 h1{
-	font:4.5em lucida calligraphy;
-	text-shadow: 30px 30px 10px #e1db92;
+	font: 3.75em/1.5 lucida chaligraphy, cursive;/*60px*/
+	margin: 40px auto;
 	text-align: center;
-	margin-left: 4.5em;
+	text-shadow: 30px 30px 15px #fff;
+	clear: right;
+}
+img{
+	max-width: 100%;
 }
 h2{
 	font:4.5em lucida calligraphy;
 	text-shadow: 30px 30px 10px #e1db92;
 	text-align: center;
-	margin-left: 4.5em;
+	margin-left: 4.5em auto;
 }
-h3{
+h3 h4{
 	text-align: center;
 }
 .sub{
@@ -63,11 +168,18 @@ a:active{
 /* =============================================================================
    Page Styles
    ========================================================================== */
+div{
+	float:left;
+    width:493px;
+    margin-right:12px;
+
+}
 aside{
 	background: #e1db92;
-	margin-top: 18em;
 	box-shadow: 5px 5px 15px 10px  #2e568c;
-}
+	float:left;
+    width:493px;
+    margin-right:12px;}
 #table_head{
 	text-align: center;
 }
@@ -80,8 +192,9 @@ td{
 }
 #hospital_photo{
 	display: block;
-	margin-left: 1em;
-}
+	float:left;
+    width:493px;
+    margin-right:12px;}
 #laser{
 	display: block;
 	margin-left: auto;
@@ -96,9 +209,7 @@ label{
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {}
-h1{
-	ma
-}
+
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}
 
@@ -107,7 +218,6 @@ h1{
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {}
-
 
 /* =============================================================================
    Font-Face
